@@ -11,11 +11,18 @@ void main() {
         ),
         body: Center(
           child: Container(
+            alignment: Alignment.center,
+            height: 360,
             width: 360,
-            color: Colors.red[700],
+            decoration: BoxDecoration(
+              color: Colors.red[700],
+              borderRadius: BorderRadius.all(
+                Radius.circular(20.0),
+              ),
+            ),
+            padding: EdgeInsets.all(20.0),
             child: Text(
-              'Bio miðar',
-              textAlign: TextAlign.center,
+              'Hello',
               style: TextStyle(fontSize: 60, color: Colors.white),
             ),
           ),
